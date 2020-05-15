@@ -1,0 +1,52 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: hsla(220, 88%, 90%, 0.787);
+    background: linear-gradient(to right, rgba(173, 214, 255, 0.877), #33AEFF);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+  }
+
+#cont-edit{
+    margin-top: 100px;
+    padding: 40px;
+}
+
+#cont-index{
+    margin-top: 50px;
+    border-radius: 2ch;
+    
+}
+#footer-ul{
+    background: rgba(2, 2, 2, 0.842);
+    padding: 14px;
+}
+
+h1,h4 {
+    font-size: 25px;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-family: cursive;
+}
+h5,h6,h2,h3{
+    font-size: 25px !important;
+    color: rgb(0, 0, 0);
+    font-weight: bold !important;
+    font-family: cursive;
+}
+ a{
+    font-size: 30px !important;
+    color: rgb(173, 173, 173) !important;
+    font-weight: bold !important;
+    font-family: cursive;  
+}
+ a:hover{
+    font-size: 35px !important;
+    color: rgba(46, 46, 46, 0.671) !important;
+}

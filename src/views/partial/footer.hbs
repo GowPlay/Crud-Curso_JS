@@ -1,0 +1,51 @@
+<ul class="nav justify-content-end" id="footer-ul">
+    <li class="nav-item">
+        <a class="btn btn-primary " data-toggle="modal" data-target="#agregar">Agregar</a>
+    </li>
+    <li class="nav-item" id="GowPlay">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">GowPlay</a>
+    </li>
+</ul>
+
+{{!-- Modal agregar  --}}
+
+<!-- Modal -->
+<div class="modal fade" id="agregar">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content ">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agregar articulo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="card-body">
+                    <form action="/GowPlay/addarticulo" method="POST">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nombre" placeholder=" Titulo" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="url" class="form-control" name="img" placeholder=" Url de la imagen">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="categoria" placeholder=" categoria">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="descripcion" rows="2" class="form-control"
+                                placeholder=" Descripcion"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block"> Guardar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

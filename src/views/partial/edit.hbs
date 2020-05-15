@@ -1,0 +1,23 @@
+{{>footer2}}
+
+<div class="container" id="cont-edit">
+
+    <form action="/GowPlay/edit/{{articulo.id}}" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" name="nombre" value="{{articulo.nombre}}" autofocus>
+        </div>
+        <div class="form-group">
+            <input type="url" class="form-control" name="img" value="{{articulo.img}}">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" name="categoria" value="{{articulo.categoria}}">
+        </div>
+        <div class="form-group">
+            <textarea name="descripcion" rows="2" class="form-control"> {{articulo.descripcion}}</textarea>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-success btn-block"> Guardar</button>
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,21 @@
+{
+  "name": "crud_nodejs-mysql",
+  "version": "1.0.0",
+  "description": "Crud con MySQL",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "author": "GowPlay",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
